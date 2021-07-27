@@ -22,6 +22,12 @@ int charac(char *buffer, char character, int flag)
  */
 int strings(char *buffer, char *string, int flag)
 {
+	if (string == (char *)0)
+	{
+		string = "(null)";
+		_strcpy(&buffer[flag], string);
+		return (_strlen(string));
+	}
 	_strcpy(&buffer[flag], string);
 	return (_strlen(string));
 }
