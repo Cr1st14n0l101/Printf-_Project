@@ -12,6 +12,12 @@ char *_itoa(int i, char *strings, int base)
 	int digit = 0;
 	int sign = 0;
 
+	if (i == 0)
+	{
+		*str++ = '0';
+		*str = '\0';
+		return (strings);
+	}
 	if (i < 0)
 		sign = 1,
 			i = -i;
