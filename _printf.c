@@ -8,7 +8,7 @@ int _printf(const char *format, ...)
 {
 	int i = 0;
 	int flag = 0;
-	char buffer[1000] = {0};
+	char buffer[2048] = {0};
 	char *f = NULL;
 
 	va_list ap;
@@ -36,6 +36,8 @@ int _printf(const char *format, ...)
 				flag += octa(buffer, va_arg(ap, int), flag);
 			else if (f[i] == '%')
 				flag += porc(buffer, flag);
+			else
+				buffer[flag++] = f[--i];
 		}
 		else
 			buffer[flag] = f[i],
