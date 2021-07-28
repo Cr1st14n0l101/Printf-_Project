@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
+#include <limits.h>
 
 int _printf(const char *format, ...);
 char *_itoa(int i, char *strout, int base);
