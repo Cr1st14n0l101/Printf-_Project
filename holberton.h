@@ -10,7 +10,7 @@
 
 int _printf(const char *format, ...);
 char *_itoa(int i, char *strout, int base);
-char *_alltoa(unsigned i, char *strings, int base);
+char *_alltoa(unsigned int i, char *strings, int base);
 /*function cases*/
 int charac(char *buffer, char character, int flag);
 int strings(char *buffer, char *string, int flag);
