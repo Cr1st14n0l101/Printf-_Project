@@ -10,7 +10,7 @@ int hexa(char *buffer, int hexadeci, int flag)
 {
 	char num[100];
 
-	_itoa(hexadeci, num, 16);
+	_alltoa(hexadeci, num, 16);
 	_strcpy(&buffer[flag], num);
 	return (_strlen(&buffer[flag]));
 }
@@ -25,7 +25,7 @@ int octa(char *buffer, int octago, int flag)
 {
 	char num[100];
 
-	_itoa(octago, num, 8);
+	_alltoa(octago, num, 8);
 	_strcpy(&buffer[flag], num);
 	return (_strlen(&buffer[flag]));
 }

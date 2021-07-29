@@ -30,9 +30,9 @@ int _printf(const char *format, ...)
 				flag += strings(buffer, va_arg(ap, char *), flag);
 			else if (f[i] == 'd' || f[i] == 'i')
 				flag += deci(buffer, va_arg(ap, int), flag);
-			else if (f[i] == 'u')
+			else if (f[i] == 'x' || f[i] == 'X')
 				flag += hexa(buffer, va_arg(ap, int), flag);
-			else if (f[i] == 'x'  || f[i] == 'X')
+			else if (f[i] == 'o')
 				flag += octa(buffer, va_arg(ap, int), flag);
 			else if (f[i] == '%')
 				flag += porc(buffer, flag);
