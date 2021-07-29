@@ -126,11 +126,11 @@ int main(void)
 	printf("Negative:[%d]\n", -762534);
 	_printf("Unsigned octal:[%o]\n", ui);
 	printf("Unsigned octal:[%o]\n", ui);
-	_printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-	printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+	_printf("Unsigned hexadecimal:[%X]\n", ui, ui);
+	printf("Unsigned hexadecimal:[%X]\n", ui, ui);
 	_printf("Character:[%c]\n", 'H');
 	printf("Character:[%c]\n", 'H');
-	_printf("String:[%s]\n", "I am a string !")
+	_printf("String:[%s]\n", "I am a string !");
 	printf("String:[%s]\n", "I am a string !");
 	len = _printf("Percent:[%%]\n");
 	len2 = printf("Percent:[%%]\n");
@@ -148,8 +148,8 @@ Negative:[-762534]
 Negative:[-762534]
 Unsigned octal:[20000001777]
 Unsigned octal:[20000001777]
-Unsigned hexadecimal:[800003ff, 800003FF]
-Unsigned hexadecimal:[800003ff, 800003FF]
+Unsigned hexadecimal:[800003FF]
+Unsigned hexadecimal:[800003FF]
 Character:[H]
 Character:[H]
 String:[I am a string !]
